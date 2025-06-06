@@ -7,6 +7,7 @@ from flask_jwt_extended import create_access_token, JWTManager, jwt_required, ge
 app = Flask(__name__)
 app.config.from_object(Config)
 
+
 # Configuração do JWT
 app.config["JWT_SECRET_KEY"] = "grupofunction" # Mude isso para uma chave mais segura em produção!
 jwt = JWTManager(app) # Inicializa a extensão JWT
